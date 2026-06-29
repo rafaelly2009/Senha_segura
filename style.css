@@ -94,9 +94,11 @@ body{
     background-color: var(--fundo-texto);
     color: var(--branco);
     border: 2px solid var(--borda);
-    padding: 24px;
-    font-size: 24px;
+    padding: 27px;
+    font-size: 27px;
     cursor: pointer;
+    border-radius: 8px;
+
 }
 .parametro-senha__texto{
     padding: 24px;
@@ -111,4 +113,19 @@ body{
     .parametro-coluna__senha{
         flex-direction: row;
     }
+}
+
+.parametro-senha__botao:hover {
+    background-color: red; 
+    color: black;            
+}
+
+.parametro-senha__botao:hover {
+    transform: translateY(-3px); 
+    filter: brightness(1.2); 
+}
+
+.parametro-senha__botao:focus {
+    outline: 3px solid var(--branco);
+    outline-offset: 2px;
 }
